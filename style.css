@@ -1,0 +1,292 @@
+/*
+Thando Tsebedu
+Class  : CS
+*/
+
+/* small device styling here*/
+body {
+	margin: 0px;
+	/*background: url(images/backgroun.jpg);*/		
+}
+ul {
+	text-align: center;
+	list-style-type: none;
+}
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 70px;
+	
+	background-image: linear-gradient(to top, rgba(25,184,254,0.9), rgba(222,222,222,1));
+}
+nav ul {
+	display: block;
+	margin: auto, 20%;
+}
+nav li {
+	display: inline-block;
+	width: 30%;
+	min-width:6em;
+	text-align: center;
+}
+header {
+	margin-top: 70px;
+	text-align: center;
+}
+header div {
+	margin: auto;
+}
+
+h2{
+	text-align: center;
+	margin: 0px 10px;
+}
+
+h3{
+	text-align: center;
+	margin: 0px 10px;
+}
+
+p{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.imgContainer{
+	width: 100%;
+}
+
+label{
+			float: left;
+			text-align: right;
+			width: 100px;}
+		br{
+			clear:left;}
+		form{
+			padding: 20px 0 20px 0;
+			width: 50px;
+			margin: 0 auto;}
+		legend{
+			font-weight: bold;}	
+		textarea {
+			width:200px;}
+
+address {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  
+}
+
+button {
+	background-color: #ebfafa;
+	font-weight: bold;
+	} 
+	
+input[type=submit], input[type=reset] {
+	background-color: #A68DB8;
+	font-weight: bold;
+	
+}
+
+div{
+	text-align: center;
+	
+}
+
+
+
+section {
+	margin: 20px 0px 20px 0px;
+}
+
+footer{
+	background-color: #ebfafa;
+	font-weight: bold;
+}
+
+
+@media only screen and (min-width: 576px) {
+	/* medium and large devices styling */
+	body {
+	/*background: url(images/backgroun.jpg);*/
+	
+	}
+	nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 50px;
+		background-image: linear-gradient(to top, rgba(228,241,254,0.9), rgba(25,181,254,1));
+	}
+	nav ul {
+		display: block;
+		margin: auto;
+		text-align: center;
+	}
+	nav li {
+		display: inline-block;
+		width: 11%;
+		min-width:6em;
+		text-align: center;
+		
+	}
+	header {
+		margin-top: 50px;
+	}
+	.imgContainer{
+		width: 33%;
+		display: inline-table;
+		height: 100%;
+	}
+	label{
+			float: left;
+			text-align: right;
+			width: 270px;}
+		br{
+			clear:left;}
+		form{
+			padding: 20px 0 20px 0;
+			width: 650px;
+			margin: 0 auto;}
+		legend{
+			font-weight: bold;}
+		textarea {
+			width:500px;}
+			
+}
+
+
+
+
+
+
+/*Collapsible*/
+.collapsible {
+  background-color: #ebfafa;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #00bfff;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+}
+
+/*Collapsible*/
+.collapsibles {
+  background-color: #ebfafa;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsibles:hover {
+  background-color: #00bfff;
+}
+
+.contents {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #ADD8E6;
+}
+
+
+/*Flex Containers*/
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container .box {
+  background-color: #f1f1f1;
+  width: 50%;
+  margin: 5px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+/*Tables*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 60%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: center;
+  font-size: 20px;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #ebfafa;
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+h3.withShadow img{
+	box-shadow: 0px 0px 4px 0px #A68DB8;
+	margin: 0px 2px
+}
+.leftAligned {
+	float: left;
+	margin-right: 5px;
+}
+.styledButton {
+	    color: #fff;
+		background-color: #A68DB8;
+    border-color: #A68DB8;
+	display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: 2px 3px;
+    font-size: 14px;
+    line-height: 1.2;
+    border-radius: 4px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+.styledButton:hover {
+	background-color: #906faa;
+}
+.formFieldset {
+	border-radius: 10px;
+}
+fieldset.formFieldset input, fieldset.formFieldset textarea, .rounded {
+	border-width: 1px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+}

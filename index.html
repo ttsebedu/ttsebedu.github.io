@@ -1,0 +1,136 @@
+<!--Thando Tsebedu
+Class CS -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Winning Smile</title>
+	
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	</head>
+	<body>
+		<nav>		
+			<!--<img src="images/logo2.png" alt="gallery" width="300" height="200">-->
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="services/services.html">Services</a></li>
+				<li><a href="gallery/gallery.html">Smile Gallery</a></li>
+				<li><a href="about/about.html">About Us</a></li>
+				<li><a href="contact/contact.html">Contact Us</a></li>
+				<li><input type="image" src="images/call2.jpg" 
+					onclick="myFunction()" alt="Submit" title="Emergency Call: 087 345 6789" width="30" height="30"/>
+				</li>
+			</ul>
+		</nav>
+		<header>
+			<h1>
+				<img src="images/logo2.png" alt="gallery" width="auto" height="200"/>
+			
+			</h1>			
+			
+				<a href="consultation/consultation.html" title="Click to book for a Consultation">
+					<h3>Book a Consultation</h3>
+				</a>							
+		</header>
+		
+	<main>
+		<section>
+				<h2>Welcome to Winning Smiles, where you'll never stop smiling.<br>
+						We cater for all ages, from the elderly to children.
+				</h2><br>
+			<article>
+				<div class="imgContainer">
+					<img src="images/elderly.jpg" alt="gallery" width="80%" height="auto"/>
+				</div>
+				
+				<div class="imgContainer">	
+					<img src="images/honeymoonteeth.jpg" alt="gallery" width="80%" height="auto">
+				</div>
+				
+				<div class="imgContainer">	
+					<img src="images/kids.jpg" alt="gallery" width="80%" height="auto"/>
+				</div>
+			</article>
+		</section>
+			
+			<section id="middleSection">
+				<p>					
+					We have clean facilities all up to standard with Covid 19 rules and regulations.<br>
+					Go to our contact page to get our location and phone numbers to book appointment<br>
+					or you can click consultation button above to book a consultation.<br>
+				</p><br>
+				<div>
+				<img src="images/facilities1.jpg" alt="gallery" width="30%" height="15%"/>
+				</div><br>
+				
+				<button type="button" class="collapsible"><h3>Click to view Covid 19, Protocol</h3></button>
+					<div class="content">
+					
+					  <p>
+						
+						The following protocol will help to keep you and us safe:<br>
+
+						Patients are triaged over phone first to see if any symptoms have been noted in the past 48 hrs or if they have been in contact with anyone with Covid 19.<br><br>
+						
+						Appointment day:<br>
+
+						- Please attend at your appointed time as we will try to ensure that there are as few people as possible in the practice on an hour to hour basis, 
+							if you wish to wait outside and only come in when we are ready to see you please feel free to notify 
+							the practice of same and we will message you when we are ready to take you directly into the surgery.<br><br>
+						- We will create scheduled breaks between appointments to reduce patient to patient contact as much as possible and we ask that you would attend on your own for your appointment and avoid bringing friends and family with you
+							patient proceeds into waiting area. Patients will be required to observe social distancing in waiting rooms and therefore may be asked to be seated in different parts of the building.<br><br>
+						
+						Patient called to surgery:<br>
+						
+							- Aerosol generating procedures will be kept to a minimum<br>
+							- Both high volume aspirators used if high speed drill used.<br>
+							- Rubber dam is used where possible and necessary.<br>
+					  </p>						
+					   <hr />
+					</div>
+				
+			</section>
+			
+		<section>
+			
+			<h3>
+						</a> Check out our Facebook page <a href="https://www.facebook.com/winningsmilecork/" title="Winning Smile Facebook Page">
+							<img src="images/facebook2.jpg" alt="Facebook" width="35" height="35"/>
+						</a>
+			</h3>	
+			
+		</section>
+	</main>	
+		
+					
+			<footer>
+				Copyright Thando Tsebedu &copy; www.winningsmile.ie
+			</footer><br>
+	</body>
+	
+	<script>
+			function myFunction() {
+				alert("To send a number from here to your phone, sign in to Chrome on both devices! or just Dial : 087 345 6789");
+			}
+	</script>
+	
+	<!--<script href="script.js"></script>-->
+	
+				<script>
+						var coll = document.getElementsByClassName("collapsible");
+						var i;
+
+						for (i = 0; i < coll.length; i++) {
+						  coll[i].addEventListener("click", function() {
+							this.classList.toggle("active");
+							var content = this.nextElementSibling;
+							if (content.style.display === "block") {
+							  content.style.display = "none";
+							} else {
+							  content.style.display = "block";
+							}
+						  });
+						}
+					</script>
+</html>
