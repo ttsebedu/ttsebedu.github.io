@@ -1,0 +1,117 @@
+<!--Thando Tsebedu
+Class CS -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--<Head of the page>-->
+    <title>Winning Smile</title>
+
+    <link rel="stylesheet" href="../style.css" type="text/css" media="screen">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <!--###-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!--<body of the page>-->
+
+    <nav>
+        <!--<Navigation>-->
+
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../services/services.html">Services</a></li>
+            <li><a href="../gallery/gallery.html">Smile Gallery</a></li>
+            <li><a href="../about/about.html">About Us</a></li>
+            <li><a href="../contact/contact.html">Contact Us</a></li>
+            <li><input type="image" src="../images/call2.jpg" onclick="myFunction()" alt="Submit" title="Emergency Call: 087 345 6789" width="30" height="30" />
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <!--<Inside this header we have a logo and 2 images>-->
+        <h1>
+            <img src="../images/logo2.png" alt="gallery" width="auto" height="200" />
+
+        </h1>
+        <h3 class='withShadow'>
+            <img src="../images/aboutus2.PNG" alt="gallery" width="300" height="100" />
+            <img src="/images/smile2.jpg" alt="gallery" width="300" height="100" /></h3><br>
+
+    </header><br>
+
+    <main>
+        <!--<main content of the page divided into sections>-->
+        <section>
+            <h3><img class='leftAligned' src="../images/aboutdoctor.jpg" alt="dentist" width="225" height="225" /></h3>
+            <p>
+                Established in 1997, Winning Smile Dental, Orthodontics & Cosmetics was founded by Kevin O'Brien and has gone on to become a leading clinic that knows its customers needs. We recognise that some patients may be apprehensive, and that a visit to a dentist
+                can be a daunting prospect. We hope that our relaxed and friendly approach in our comfortable surroundings will alleviate any anxiety you may have. Establishing rewarding and lasting relationships with our patients is important to us.
+                We pledge excellence in all we do, and we are looking forward to helping you make the most of your smile now and for all the years to come. Our goal is prevention rather than treatment.
+            </p>
+        </section>
+
+        <section style="text-align: center;">
+            <button type="button" id="flip"><h3>Click to view Customer Reviews</h3></button>
+            <div class="contents" id="panel">
+                <p>
+
+                    <div class="flex-container">
+                        <div class="box">Eileen Cork - "I decided to try botox to help freshen up my face. I was recommended to Kevin by a trusted friend who have been going to him for a number of years. I arrived in the waiting room I felt relaxed. His receptionist knew
+                            I was nervous and immediately put me at ease. The experience was a very positive one. Kevin made me feel secure and happy, the procedure was quick and pain free. I was delighted with the results"</div>
+                        <div class="box">Jennifer Cork - "My family and I have been attending Winning Smiles Dental Practice for the last 6 years. Through out this time we always found the staff to be extremely polite, efficient and helpful. Kevin has always been very
+                            professional in his approach to us yet friendly and reassuring, especially towards our younger children who enjoy going for their check ups! I would highly recommend this practise to anyone."</div>
+                        <div class="box">S. Roche Glanmire - "I attended Winning Smile dental surgery as an emergency during Covid 19 as my orthodontist was closed. Two of my braces came off my teeth. I contacted Winning Smile and they were very accommodating even though
+                            I am not a client of theirs I was seen the following day. The dentist was great, he put my mind at ease and had the procedure completed in 30 minutes. I am very satisfied with the outcome."</div>
+                        <div class="box">L. Erangey Cork- "I broke a tooth in the middle of Covid-19, I was panicking about even being able to see a dentist. When I came across winning smile dental. They fitted me in almost immediately and from the initial contact with
+                            Lynda to the professional service provided by Grace, I felt like I was in the best hand from start to finish! The facility was spotlessly clean, plenty of parking and very convenient opening hours. Cannot recommend enough."</div>
+                    </div>
+
+
+                </p>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+        <!--<Footer of the page>-->
+        Copyright Thando Tsebedu &copy; www.winningsmile.ie
+    </footer><br>
+
+
+</body>
+
+<script>
+    // var coll = document.getElementsByClassName("collapsibles");
+    // var i;
+
+    // for (i = 0; i < coll.length; i++) {
+    //   coll[i].addEventListener("click", function() {
+    // 	this.classList.toggle("active");
+    // 	var contents = this.nextElementSibling;
+    // 	if (contents.style.display === "block") {
+    // 	  contents.style.display = "none";
+    // 	} else {
+    // 	  contents.style.display = "block";
+    // 	}
+    //   });
+    // }
+    $(document).ready(function() {
+        $("#flip").click(function() {
+            $("#panel").slideToggle("slow");
+        });
+    });
+</script>
+
+<script>
+    function myFunction() {
+        alert("To send a number from here to your phone, sign in to the same browser on both devices! or just Dial : 087 345 6789");
+    }
+</script>
+
+</html>
